@@ -1,20 +1,261 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>1.6 Final Mockup</title>
-</head>
-<body>
- <header>
-    <h1>Webpack</h1>
- </header>  
- <main>
-    <img src="img/call.png" alt="">
- </main> 
- <footer>
-   <div class="image"></div>
- </footer>
-</body>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-menu">
+        <ul class="header__elements">
+          <li class="list__elements">
+            <button class="header__btn btns">
+              <img
+                src="./img/burger__svg.svg"
+                alt="Меню"
+                class="header__icons"
+              />
+            </button>
+          </li>
+          <li class="list__elements">
+            <a href="#" class="header__li">
+              <img
+                src="./img/Group.svg"
+                alt="Логотип"
+                class="header__icons"
+              />
+            </a>
+          </li>
+          <li class="list__elements">
+            <button class="header__btn btns tbl">
+              <img
+                src="./img/call__svg.svg"
+                alt="Звонок"
+                class="header__icons"
+              />
+            </button>
+          </li>
+          <li class="list__elements">
+            <button class="header__btn btns tbl">
+              <img
+                src="./img/chat__svg.svg"
+                alt="Чат"
+                class="header__icons"
+              />
+            </button>
+          </li>
+          <li class="list__elements">
+            <button class="header__btn btns tbl">
+              <img
+                src="./img/profile__svg.svg"
+                alt="Профиль"
+                class="header__icons"
+              />
+            </button>
+          </li>
+          <li class="list__elements">
+            <button class="header__btn btns">
+              <img
+                src="./img/repair__svg.svg"
+                alt="Заявка"
+                class="header__icons"
+              />
+            </button>
+          </li>
+          <li class="list__elements">
+            <button class="header__btn btns">
+              <img
+                src="./img/checkstatus__svg.svg"
+                alt="Статус ремонта"
+                class="header__icons"
+              />
+            </button>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main class="main">
+      <div class="main-display">
+        <section class="main-display__content">
+          <h1 class="main-display__heading">Услуги и сервисы</h1>
+        </section>
+        <div class="join-btns desktop">
+          <a href="#" class="main-display__li">Оставить заявку</a>
+          <button class="main-display__btn btns">
+            <img
+              src="./img/repair__svg.svg"
+              alt="Оставить заявку"
+              class="join-btns__icon"
+            />
+          </button>
+          <a href="#" class="main-display__li">Статус ремонта</a>
+          <button class="main-display__btn btns">
+            <img
+              src="./img/checkstatus__svg.svg"
+              alt="Статус ремонта"
+              class="join-btns__icon"
+            />
+          </button>
+        </div>
+      </div>
+      <nav class="navig">
+        <ul class="navig__li">
+          <li class="navig__item">
+            <button class="navig__btn">
+              <a href="#" class="navig__link">Ремонтируемые бренды</a>
+            </button>
+          </li>
+          <li class="navig__item">
+            <button class="navig__btn">
+              <a href="#" class="navig__link">Цены на услуги</a>
+            </button>
+          </li>
+          <li class="navig__item">
+            <button class="navig__btn">
+              <a href="#" class="navig__link">Адреса сервисных центров</a>
+            </button>
+          </li>
+          <li class="navig__item">
+            <button class="navig__btn">
+              <a href="#" class="navig__link">Специальные цены</a>
+            </button>
+          </li>
+          <li class="navig__item">
+            <button class="navig__btn">
+              <a href="#" class="navig__link">Ремонтируемые устройства</a>
+            </button>
+          </li>
+          <li class="navig__item">
+            <button class="navig__btn">
+              <a href="#" class="navig__link">Отзывы</a>
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <div class="main-display__description">
+        <div class="main-display__join-text">
+          <p class="main-display__text">
+            Мы являемся авторизованным сервисным центром по ремонту техники
+            Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+            официальной гарантией производителя.
+          </p>
+          <br class="tbl" />
+          <p class="main-display__text tbl text-hide">
+            Мы успешно работаем с 1992 года и заслужили репутацию надежного
+            партнера, что подтверждает большое количество постоянных клиентов.
+            Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
+            очередь, советуют нас родным и близким.
+          </p>
+          <div class="read-more">
+            <button class="read-more__btn">Читать далее</button>
+          </div>
+        </div>
+        
+        <img
+          src="./img/main__logo(middle).png"
+          alt="Логотип"
+          class="main-display__img"
+        />
+      </div>
+    </main>
+    <div class="headerdiv">
+      <div class="headerdiv-headline">
+        <h1 class="headerdiv__elements">РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</h1>
+      </div>
+    </div>
+
+    <main class="maind">
+      <div class="maind-div">
+        <div class="image-slider swiper mySwiper">
+          <div class="image-slider__wrapper swiper-wrapper">
+            <div class="image-slider__slide swiper-slide">
+              <button class="main__btn">
+                <img src="img/image (1)/Bitmap.svg" alt="Lenovo" class="logo__btn" />
+                <img src="img/image (1)/go.svg" alt="Кнопка" class="go__btn" />
+              </button>
+            </div>
+            <div class="swiper-slide">
+              <button class="main__btn">
+                <img src="img/image (1)/Bitmap (1).svg" alt="Samsung" class="logo__btn" />
+                <img src="img/image (1)/go.svg" alt="Кнопка" class="go__btn" />
+              </button>
+            </div>
+            <div class="swiper-slide">
+              <button class="main__btn">
+                <img src="img/image (1)/Bitmap (2).svg" alt="Apple" class="logo__btn" />
+                <img src="img/image (1)/go.svg" alt="Кнопка" class="go__btn" />
+              </button>
+            </div>
+            <div class="swiper-slide">
+              <button class="main__btn">
+                <img src="img/image (1)/Bitmap (3).svg" alt="ViewSonic" class="logo__btn" />
+                <img src="img/image (1)/go.svg" alt="Кнопка" class="go__btn" />
+              </button>
+            </div>
+            <div class="swiper-slide">
+              <button class="main__btn">
+                <img src="img/image (1)/Bitmap (4).svg" alt="Bosch" class="logo__btn" />
+                <img src="img/image (1)/go.svg" alt="Кнопка" class="go__btn" />
+              </button>
+            </div>
+            <div class="swiper-slide">
+              <button class="main__btn">
+                <img src="img/image (1)/Bitmap (5).svg" alt="Hp" class="logo__btn" />
+                <img src="img/image (1)/go.svg" alt="Кнопка" class="go__btn" />
+              </button>
+            </div>
+            <div class="swiper-slide">
+              <button class="main__btn">
+                <img src="img/image (1)/Bitmap (6).svg" alt="Acer" class="logo__btn" />
+                <img src="img/image (1)/go.svg" alt="Кнопка" class="go__btn" />
+              </button>
+            </div>
+            <div class="swiper-slide">
+              <button class="main__btn">
+                <img src="img/image (1)/Bitmap (7).svg" alt="Sony" class="logo__btn" />
+                <img src="img/image (1)/go.svg" alt="Кнопка" class="go__btn" />
+              </button>
+            </div>
+            <div class="swiper-slide btn">
+              <button class="main__btn btn">
+                <img src="img/image (1)/Bitmap (8).svg" alt="Lenovo" class="logo__btn" />
+                <img src="img/image (1)/go.svg" alt="Кнопка" class="go__btn" />
+              </button>
+            </div>
+            <div class="swiper-slide btn">
+              <button class="main__btn btn">
+                <img src="img/image (1)/Bitmap (9).svg" alt="Samsung" class="logo__btn" />
+                <img src="img/image (1)/go.svg" alt="Кнопка" class="go__btn" />
+              </button>
+            </div>
+            <div class="swiper-slide btn">
+              <button class="main__btn btn">
+                <img src="img/image (1)/Bitmap (10).svg" alt="Apple" class="logo__btn" />
+                <img src="img/image (1)/go.svg" alt="Кнопка" class="go__btn" />
+              </button>
+            </div>
+          </div>
+          <div class="swiper-pagination">  
+        </div>       
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+    <div class="footer-div">
+      <button class="footer__btn on" id="showMoreBtn">
+        <img src="img/image (1)/expand.svg" alt="Кнопка" class="footer__img">Показать все
+      </button>
+    </div>
+    <div class="footer-div">
+      <button class="footer__btn off" id="showLessBtn" style="display: none;">
+        <img src="img/image (1)/expand.svg" alt="Кнопка" class="footer__img">Скрыть
+      </button>
+    </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- <script src="script.js"></script> -->
+  </body>
 </html>
