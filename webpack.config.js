@@ -38,50 +38,51 @@ module.exports = {
     ],
     module: {
         rules: [
-            {
-                test: /\.html$/i,
-                loader: 'html-loader',
-            },
-            {
-                test: /\.(c|sa|sc)ss$/i,
-                use: [
-                    devMode ? "style-loader" : MiniCssExtractPlugin.loader, 
-                    "css-loader",
-                    {
-                        loader: 'postcss-loader',
-                        options: {
-                            postcssOptions: {
-                                plugins: [require('postcss-preset-env')],
-                            }
-                        }
-                    },
-                    'sass-loader',
-                ],
-            },
-            {
-                test: /\.(ttf)$/i,
-                type: 'asset/resource',
-                generator: {
-                    filename: 'fonts/[name][ext]'
-                },
-            },
-            {
-                test: /\.(jpe?g|png|webp|gif|svg)$/i,
-                type: 'asset/resource',
-            },
-            {
-                test: /\.(?:js|mjs|cjs)$/i,
-                exclude: /node_modules/,
-                use: {
-                  loader: 'babel-loader',
-                  options: {
-                    targets: "defaults",
-                    presets: [
-                      ['@babel/preset-env']
-                    ]
+          {
+            test: /\.html$/i,
+            loader: 'html-loader',
+          },
+          {
+            test: /\.(c|sa|sc)ss$/i,
+            use: [
+              devMode ? "style-loader" : MiniCssExtractPlugin.loader, 
+              "css-loader",
+              {
+                loader: 'postcss-loader',
+                options: {
+                  postcssOptions: {
+                    plugins: [require('postcss-preset-env')],
                   }
                 }
+              },
+              'sass-loader',
+            ],
+          },
+          {
+            test: /\.(ttf)$/i,
+            type: 'asset/resource',
+            generator: {
+              filename: 'fonts/[name][ext]'
             },
+          },
+          {
+            test: /\.(jpe?g|png|webp|gif|svg)$/i,
+            type: 'asset/resource',
+          },
+          {
+            test: /\.(?:js|mjs|cjs)$/i,
+            exclude: /node_modules/,
+            use: {
+              loader: 'babel-loader',
+              options: {
+                targets: "defaults",
+                presets: [
+                  ['@babel/preset-env']
+                ]
+              }
+            }
+          },
         ],
-    },
+      },
+      
 };

@@ -1,33 +1,3 @@
-let swiper;
-
-function initSwiper() {
-    swiper = new Swiper(".mySwiper", {
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        slidesPerView: "auto",
-        spaceBetween: 16,
-    });
-}
-
-function handleResize() {
-    if (innerWidth > 768) {
-        if (swiper) {
-            swiper.destroy(true, true); 
-            swiper = null;
-        }
-    } else {
-        if (!swiper) {
-            initSwiper(); 
-        }
-    }
-}
-
-handleResize();
-
-window.addEventListener('resize', handleResize);
-
 
 
 const showMoreBtn = document.getElementById('showMoreBtn');

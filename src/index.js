@@ -1,3 +1,14 @@
 import './index.html';
 import './index.scss';
-// import { mult, sum } from './modules/calc';
+
+import './js/swiper';
+import './js/brends';
+import './js/navigation';
+import './js/feedback';
+import './js/call';
+
+import 'swiper/css';               
+import 'swiper/css/navigation';  
+import 'swiper/css/pagination'; 
+
+

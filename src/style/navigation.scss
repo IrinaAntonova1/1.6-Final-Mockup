@@ -1,0 +1,133 @@
+
+.conteiner {
+    flex: 1; /* Позволяет основному контенту занимать оставшееся пространство */
+    transition: margin-left 0.3s ease; /* Плавный переход для сдвига контента */
+}
+
+.navigation {
+    width: 320px;
+    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
+    .navigation__hat {
+        background-color: $menu;
+        padding: 18px 24px;
+        .navigation__elements {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 16px;
+        }
+    }
+}
+
+.logo {
+    margin-left: 62px;
+}
+.nav-btns {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $butt;
+    border-radius: 50%;
+    border: none;
+}
+
+.navig__li {
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+}
+.navig__btn {
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 16px 24px;
+}
+
+.navig__link,
+.navig__link:active,
+.navig__link:visited {
+    color: $maindisplay;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    width: 24px;
+    position: relative;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+.navig__link:hover {
+    color: rgba(126, 126, 130, 1);
+    transition-property: all;
+    transition-duration:  0.5s;
+}
+.navig__link:hover::before {
+    content: "";
+    position: absolute;
+    height: 32px;
+    width: 4px;
+    background-color: $expand;
+    top: -6px;
+    left: -24px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+.navigation__footer-contact {
+    background-color: $menu;
+    padding: 268px 24px 16px;
+    .navigation__footer-elements {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 16px;
+    }
+}
+.navigation__div-reference {
+   margin-left: 24px; 
+   .navigation__reference-elements {
+    color: $maindisplay;
+    font-weight: 600;
+    font-size: 16px;
+}
+}
+
+.navigation__div-number {
+    margin: 12px 24px 40px 24px;
+}
+.navigation__number-elements {
+    color: $maindisplay;
+    font-weight: bold;
+    font-size: 24px;
+}
+.navigation__div-leng {
+    padding: 0px 24px 32px;
+    .navigation__lang-elements {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 7px;
+        .navigation__l-elements {
+            font-size: 16px;
+            font-weight: 600;
+            background-color: $menu;
+        }
+    }
+}
+.navigation__ru-btn {
+    color: $naviglink;
+}
+.navigation__en-btn {
+    color: $maindisplay;
+}
+.navigation__ch-btn {
+    color: $maindisplay;
+}
+
+@media (min-width: 1120px) {
+    .body {
+        display: flex;
+    }
+}

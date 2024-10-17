@@ -1,4 +1,19 @@
 @import 'libs/normalize.css';
 @import 'style/fonts';
 @import 'style/var';
-@import 'style/style';
+
+@import './style/header.scss';
+@import './style/style.scss';
+@import './style/services.scss';
+@import './style/brends.scss';
+@import './style/products.scss';
+@import './style/price.scss';
+@import './style/footer.scss';
+@import './style/navigation.scss';
+@import './style/feedback.scss';
+@import './style/call.scss';
+
+@import '~swiper/swiper-bundle.css';
+
+
+

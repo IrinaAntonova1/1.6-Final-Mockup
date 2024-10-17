@@ -1,0 +1,145 @@
+
+.price__title-headline {
+  background: linear-gradient(to right, $bacmain, $menu);
+  padding: 16px;
+  .price__title-elements {
+    font-size: 16px;
+    color: $naviglink;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    font-weight: normal;
+  }
+}
+
+.price-slider {
+  background: $bacmain;
+  padding: 16px 16px 16px 8px;
+}
+.price-slider__button {
+  width: 260px;
+  height: 200px;
+  padding: 16px;
+  border-radius: 6px;
+  background-color: $menu;
+
+  .price-slider__text {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+
+    color: $maindisplay;
+    .text-in-btn {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+      text-align: left;
+      color: $naviglink;
+    }
+  }
+}
+.price-slider__text--1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-slider__button-go {
+  width: 119px;
+  height: 32px;
+  border-radius: 16px;
+  background-color: $butt;
+  color: $menu;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 767px) {
+  .image-slider {
+    position: relative;
+    padding-bottom: 40px;
+    .swiper-slide {
+      display: flex;
+      max-width: 260px;
+      height: 200px;
+      min-width: 0;
+    }
+  }
+
+  .swiper-pagination {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+    margin: 10px 0;
+  }
+  .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: $pagination-bullet;
+    opacity: 1;
+    margin: 0 6px;
+    display: inline-block;
+    margin: 0;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: $bullet-active;
+  }
+  .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+  }
+  .price-table {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .price-slider {
+    display: none;
+  }
+
+  .swiper-pagination {
+    display: none;
+  }
+  .price-table {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 24px;
+    background-color: $bacmain;
+    .price-table__table {
+      width: 100%;
+      border-spacing: 0;
+      border-collapse: separate;
+      .price-table__table-thead {
+        background-color: $bacmain;
+        text-align: left;
+        color: $naviglink;
+      }
+    }
+  }
+  .price-table__table-thead th {
+    padding: 16px;
+    font-size: 14px;
+    font-weight: normal;
+    opacity: 0.72px;
+  }
+
+  .price-table__table-tbody {
+    background-color: $menu;
+    .price-table__table-tbody tr {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+  }
+  .price-table__table-tbody td {
+    padding: 16px;
+    font-size: 14px;
+    color: $maindisplay;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+  }
+}
