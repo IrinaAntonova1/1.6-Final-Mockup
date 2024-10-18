@@ -1,27 +1,31 @@
 
-const callButtons = document.querySelectorAll('.call-btns');
-const callWindow = document.querySelector('.call');
-const callCloseButton = document.querySelector('.call__navigation-btn');
-const overlay = document.querySelector('.overlay');
+const showMoreBtn1 = document.getElementById('showMoreBtn1');
+const showLessBtn1 = document.getElementById('showLessBtn1');
+const swiperWrapper = document.querySelector('.sl-btn');
+
+function showAllItems1() {
+    swiperWrapper.classList.remove('two-rows1'); 
+    swiperWrapper.classList.add('full-height'); 
+    showMoreBtn1.style.display = 'none'; 
+    showLessBtn1.style.display = 'inline-flex'; 
+}
+
+function hideItems1() {
+    swiperWrapper.classList.remove('full-height'); 
+    swiperWrapper.classList.add('two-rows1'); 
+    showLessBtn1.style.display = 'none'; 
+    showMoreBtn1.style.display = 'inline-flex'; 
+}
 
 
-callButtons.forEach((callButton, index) => {
-    callButton.addEventListener('click', () => {
-      console.log(`Call button ${index + 1} clicked`);
-      callWindow.classList.add('active');
-      overlay.classList.add('active');
-    });
-  });
-  
-  
+showMoreBtn1.addEventListener('click', showAllItems1);
+showLessBtn1.addEventListener('click', hideItems1);
 
-  callCloseButton.addEventListener('click', () => {
-    callWindow.classList.remove('active'); 
-    overlay.classList.remove('active');
-  });
-  
 
-  overlay.addEventListener('click', () => {
-    callWindow.classList.remove('active');
-    overlay.classList.remove('active');
-  });
+window.addEventListener('load', function () {
+    hideItems1(); 
+});
+
+
+
+

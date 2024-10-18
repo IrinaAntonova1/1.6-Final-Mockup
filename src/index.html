@@ -345,7 +345,7 @@
       <div class="products-slider">
         <div class="products-slider__div">
           <div class="image-slider swiper mySwiper">
-            <div class="image-slider__wrapper swiper-wrapper">
+            <div class="image-slider__wrapper swiper-wrapper imagess two-rows1 sl-btn">
               <div class="image-slider__slide swiper-slide">
                 <div class="products-slider__button">
                   <div class="products-slider__text">Ремонт ноутбуков</div>
@@ -366,7 +366,7 @@
                   </div>
                 </div>
               </div>
-              <div class="image-slider__slide swiper-slide">
+              <div class="image-slider__slide swiper-slide hidden-row">
                 <div class="products-slider__button">
                   <div class="products-slider__text">Ремонт ПК</div>
                   <div>
@@ -376,7 +376,7 @@
                   </div>
                 </div>
               </div>
-              <div class="image-slider__slide swiper-slide">
+              <div class="image-slider__slide swiper-slide hidden-row">
                 <div class="products-slider__button">
                   <div class="products-slider__text">Ремонт мониторов</div>
                   <div>
@@ -393,8 +393,13 @@
       </div>
       <div class="products-footer">
         <div class="products-footer-div">
-          <button class="products-footer__btn on--1">
+          <button class="products-footer__btn brends-footer__btn on on--1" id="showMoreBtn1">
             <img src="img/image (1)/expand.svg" alt="Кнопка" class="products-footer__img" />Показать все
+          </button>
+        </div>
+        <div class="products-footer-div">
+          <button class="products-footer__btn brends-footer__btn off off--1" id="showLessBtn1" style="display: none">
+            <img src="img/image (1)/expand.svg" alt="Кнопка" class="products-footer__img" />Скрыть
           </button>
         </div>
       </div>

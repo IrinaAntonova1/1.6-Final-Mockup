@@ -48,14 +48,14 @@
     padding: 6px 16px;
     font-size: 16px;
     line-height: 24px;
-    .div-navig__link {
-      &:focus {
-        border: 1px solid $naviglinkfokus;
-        padding: 8px 16px;
-        background-color: $menu;
-        border-radius: 6px;
-      }
-    }
+  }
+}
+.div-navig__link {
+  &:focus {
+    border: 1px solid $naviglinkfokus;
+    padding: 8px 16px;
+    background-color: $menu;
+    border-radius: 6px;
   }
 }
 .services-display__join-text {
