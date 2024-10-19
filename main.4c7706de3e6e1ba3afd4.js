@@ -13067,7 +13067,7 @@ fieldset.phone input {
     width: 288px;
   }
   .call__button-go {
-    padding-bottom: 120px;
+    padding-bottom: 200px;
   }
 }
 @media (min-width: 1120px) {
@@ -20677,4 +20677,4 @@ __webpack_require__.r(__webpack_exports__);
 
 /******/ })()
 ;
-//# sourceMappingURL=main.92435f2e6e6c8cd219bb.js.map
+//# sourceMappingURL=main.4c7706de3e6e1ba3afd4.js.map
