@@ -1,3 +1,4 @@
+
 .call__text {
     font-weight: 600;
     font-size: 24px;
@@ -71,6 +72,9 @@ fieldset {
 
 
 @media (max-width: 1120px) {
+    .call {
+        height: auto;
+    }
     .call__div {
         width: 320px;
         height: auto;
@@ -95,7 +99,7 @@ fieldset {
     }
 
     .call__button-go {
-        padding-bottom: 75px;
+        padding-bottom: 120px;
     }
 
 }

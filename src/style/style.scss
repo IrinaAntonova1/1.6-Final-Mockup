@@ -97,19 +97,30 @@
 
 .call,
 .feedback__div {
-  max-height: 130vh; /* Ограничение по высоте окна */
+  max-height: 120vh;
 }
 
 .scrollable {
-  overflow-y: auto; /* Включаем вертикальную прокрутку */
+  overflow-y: auto; 
 }
 
 
 @media (min-width: 1120px) {
   .call__navigation-btn, .feedback__navigation-btn {
-    position: fixed; // или absolute, если тебе так удобнее
+    position: fixed;
 
-    z-index: 1000; // достаточно высокий z-index, чтобы перекрывать содержимое
+    z-index: 1000;
     display: block;
   }
+}
+@media (min-width: 768px) and (max-width: 1119px) {
+  .scrollable {
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+  }
+  .call,
+.feedback__div {
+  max-height: 100vh;
+}
 }

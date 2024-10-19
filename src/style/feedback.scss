@@ -81,6 +81,9 @@ fieldset {
 
 
 @media (max-width: 1120px) {
+    .feedback {
+        height: auto;
+    }
     .feedback__div {
         width: 320px;
         height: auto;
@@ -105,7 +108,7 @@ fieldset {
     }
 
     .feedback__button-go {
-        padding-bottom: 75px;
+        padding-bottom: 120px;
     }
 
 }
