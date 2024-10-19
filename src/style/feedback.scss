@@ -6,6 +6,7 @@
     text-align: left;
     position: relative;
 
+
     &::before {
         content: "";
         position: absolute;
@@ -134,6 +135,7 @@ fieldset {
         }
     }
     .feedback__text {
+        left: 74px;
         &::before {
             left: -32px;
         }

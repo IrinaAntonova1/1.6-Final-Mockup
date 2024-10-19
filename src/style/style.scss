@@ -52,7 +52,7 @@
   right: 0; 
   bottom: 0; 
   background: rgba(255, 255, 255, 0.8); 
-  z-index: 100; 
+  z-index: 1000; 
 }
 
 .overlay.active {
@@ -81,7 +81,7 @@
   position: fixed;
   right: -100%; 
   top: 0;
-  width: 300px;
+  width: 320px;
   height: 100vh;
   background-color: $menu;
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
@@ -95,4 +95,21 @@
   z-index: 1000; 
 }
 
-  
+.call,
+.feedback__div {
+  max-height: 130vh; /* Ограничение по высоте окна */
+}
+
+.scrollable {
+  overflow-y: auto; /* Включаем вертикальную прокрутку */
+}
+
+
+@media (min-width: 1120px) {
+  .call__navigation-btn, .feedback__navigation-btn {
+    position: fixed; // или absolute, если тебе так удобнее
+
+    z-index: 1000; // достаточно высокий z-index, чтобы перекрывать содержимое
+    display: block;
+  }
+}

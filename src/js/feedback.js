@@ -13,8 +13,8 @@ const overlay = document.querySelector('.overlay');
 
 // Функция для закрытия обоих окон
 function closeAllWindows() {
-  callWindow.classList.remove('active');
-  feedbackWindow.classList.remove('active');
+  callWindow.classList.remove('active', 'scrollable'); // убираем скролл при закрытии
+  feedbackWindow.classList.remove('active', 'scrollable');
   overlay.classList.remove('active');
 }
 
@@ -25,11 +25,11 @@ callButtons.forEach((callButton, index) => {
 
     // Закрываем feedback, если оно открыто
     if (feedbackWindow.classList.contains('active')) {
-      feedbackWindow.classList.remove('active');
+      feedbackWindow.classList.remove('active', 'scrollable');
     }
 
-    // Открываем окно call
-    callWindow.classList.add('active');
+    // Открываем окно call и делаем его прокручиваемым
+    callWindow.classList.add('active', 'scrollable');
     overlay.classList.add('active');
   });
 });
@@ -41,11 +41,11 @@ chatButtons.forEach((chatButton, index) => {
 
     // Закрываем call, если оно открыто
     if (callWindow.classList.contains('active')) {
-      callWindow.classList.remove('active');
+      callWindow.classList.remove('active', 'scrollable');
     }
 
-    // Открываем окно feedback
-    feedbackWindow.classList.add('active');
+    // Открываем окно feedback и делаем его прокручиваемым
+    feedbackWindow.classList.add('active', 'scrollable');
     overlay.classList.add('active');
   });
 });

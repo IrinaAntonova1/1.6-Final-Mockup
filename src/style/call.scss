@@ -102,7 +102,7 @@ fieldset {
 
 @media (min-width: 1120px) {
     .call {
-        width: 513px;
+        width: 440px;
         height: auto;
 
         .call__div {
@@ -124,8 +124,9 @@ fieldset {
         }
     }
     .call__text {
+        left: 74px;
         &::before {
-            left: -32px;
+            left: -33px;
         }
     }
 
